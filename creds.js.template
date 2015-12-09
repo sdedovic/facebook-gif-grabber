@@ -1,0 +1,7 @@
+module.exports = {
+	email: "example@site.com", 
+	password: "mypassword",
+	chatId: 'chatidforchat'
+};
+
+// RENAME TO creds.js

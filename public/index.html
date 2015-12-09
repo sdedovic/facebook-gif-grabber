@@ -1,0 +1,19 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<title>Magic Gif Grabber!</title>
+</head>
+<body style="background-color: black;">
+<img id="image" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		setInterval(function(){
+			$.get('/images', function(resp){
+				$('#image').attr('src', resp)
+			});
+		}, 2500);
+	});
+</script>
+</body>
+</html>
